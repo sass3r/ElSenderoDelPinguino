@@ -1,0 +1,119 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8x]{inputenc}
+	
+\usepackage[pdftex]{graphicx}
+\usepackage{pifont}
+
+\usepackage[
+pdfauthor={Ubaldino Zurita},%	
+pdftitle={Proyecto el sendero del pinguino},%
+colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+%urlcolor=black
+pdftex]{hyperref}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+
+% Para la primera página
+\fancypagestyle{plain}{
+\fancyhead[l]{}
+\fancyhead[r]{}
+\fancyhead[c]{}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyfoot[l]{SCESI \\ Sociedad Científica de Estudiantes de Sistemas e
+Informática}
+\fancyfoot[c]{}
+\fancyfoot[r]{\thepage/\pageref{LastPage}}
+\renewcommand{\footrulewidth}{0.5pt}}
+
+% Para el resto de páginas
+\lhead{Proyecto el sendero del pinguino}
+\chead{}
+\rhead{\includegraphics[width=0.1\textwidth]{scesi.png}}
+\renewcommand{\headrulewidth}{0.4pt}
+\lfoot{SCESI \\ Sociedad Científica de Estudiantes de Sistemas e Informática\\
+\url {http://www.scesi.org}}
+\cfoot{}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{\bf El sendero del pinguino}
+\author{
+\begin{tabular}{l}
+    Ubaldino Zurita \\
+    Abel Raul Diaz Castillo\\ 
+    Rudy Rafael Ramírez Caero\\
+    Jhasmany Elvis Quiroz Olivera\\
+    Edgar Valencia Cayetano\\
+    Valerio Terrazas Garcia\\
+    Jonathan Daniel Huayta Donaire\\
+    Jhosmar Parra Montaño\\
+    Marcelo Marcos Vargas Chavez\\
+    Rebeca Vargas Garcia\\
+    Ismael Vargas Chavez
+\end{tabular}
+}
+
+\begin{document}
+\maketitle
+\begin{center}\includegraphics[width=0.56\textwidth]
+{penguin.jpg}\end{center}
+\begin{center}\url {http://gnulinux.scesi.org}\end{center}
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\section{Introducción}
+GNU/Linux es un sistema operativo versátil, potente, seguro y sobre todo libre, el usar dicho sistema implica una curva de aprendizaje empinada y dura pero una vez superada los beneficios educativos son bastantes notorios y motivadores, la forma mas efectiva de aprender a usar el sistema es aplanar la curva de aprendizaje, estudiando desde las bases teóricas hasta las instalaciones y configuraciones practicas, aprendiendo y al mismo 	tiempo redactando, compartiendo el conocimiento y creciendo colectivamente. 
+
+\section{Antecedentes}
+Desde tiempos remotos en la Sociedad Científica de Estudiantes de Sistemas e Informática (SCESI) se promovió el uso de GNU/Linux como herramienta principal de desarrollo de diferentes proyectos, como consecuencia directa del trabajo, se logró adquirir un cierto nivel de experiencia en el uso del sistema, pero inevitablemente la experiencia no pudo ser transferida a las nuevas generaciones de integrantes.
+	
+\section{Definición del Problema}
+Como se mencionó anteriormente, la experiencia de los integrantes de la SCESI en materia de GNU/Linux no es correctamente transferida a las nuevas generaciones de integrantes lo que implica una ausencia de recursos propios y una cantidad considerable de dudas específicas por parte de los nuevos integrantes.\\
+
+Por lo mencionado se define el problema como:\\
+
+\emph{“La falta de documentación del conocimiento y experiencia adquirida en la instalación, configuración y uso, en materia de sistemas GNU/Linux presenta una gran falta de utilidad social y practica dentro de la Sociedad Científica de Estudiantes de Sistemas e Informática (SCESI) lo que perjudica notoriamente el avance de esta misma.”}
+
+\section{Objetivo General}
+Escribir una guía de instalación,configuración y uso del sistema operativo Debian GNU/Linux.
+
+\section{Objetivos Específicos}
+\begin{itemize}
+\item Documentar los principios del software libre y términos afines. 
+\item Documentar la reseña biográfica del proyecto GNU, el núcleo Linux y Debian.
+\item Estudiar y documentar la instalación y configuración del sistema base.
+\item Estudiar y documentar la instalación y configuración de la interfaz gráfica del sistema.
+\item Estudiar y documentar la instalación y configuración del servidor de sonido.
+\item Estudiar y documentar la instalación y configuración del servidor de impresión.
+\item Estudiar y documentar la instalación y configuración de software adicional necesario.
+\item Estudiar y documentar el manejo de la linea de comandos.
+\item Proveer al trabajo final la licencia de documentación libre de GNU GFDL. 
+\end{itemize}
+
+\section{Herramientas}
+Para la experimentación practica se utilizara el sistema operativo Debian GNU/Linux versión 7, nombre clave Wheezy, un foro SMF para la organización interna de los editores y para la edición del trabajo final la distribución de LATEX, texlive.
+
+\section{Justificación}
+Este proyecto posee intrínsecamente cualidades educativas, primeramente para el grupo de GNU/Linux básico, esta el aprendizaje sobre la instalación, configuración y manejo de distribuciones basadas en Debian GNU/Linux.\\
+También se encuentra inherentemente el aprendizaje de la linea de comandos, para el mismo grupo de GNU/Linux básico, y la preparación adecuada para la posterior colaboración al grupo encargado del desarrollo de la meta distribución FOS.
+
+\section{Bibliografía}
+\begin{flushleft}
+Hertzog,  Raphaël  y Mas, Roland.\\
+El libro del administrador de Debian.\\
+\end{flushleft}
+
+\end{document}
